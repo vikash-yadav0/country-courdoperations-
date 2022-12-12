@@ -1,0 +1,23 @@
+﻿@using curdoperation.Models;
+@model IEnumerable<Country>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h4>country List</h4>
+
+
+<ul>
+    @{
+        foreach (Country cst in Model)
+        {
+            <li>@cst.country_name</li>
+            <a href="/Country/DeleteCountry/@cst.country_Id">Delete</a>
+            <a href="/Country/UpdateCountry/@cst.country_Id">Update</a>
+            <a href="/Country/StateDetail/@cst.country_Id">States in it</a>
+        }
+    }
+</ul>
+<a href="/Country/InsertCountry">Insert new country</a>

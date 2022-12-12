@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "UpdateCountry";
+}
+
+<h2>UpdateCountry</h2>
+
+<form method="post" action="/Country/UpdateCountry">
+    <div class="mb-3">
+
+        <label for="country_id" class="form-label" >Country : </label>
+        <input type="text" class="form-control" id="country_id" value="@Model.country_Id" name="country_id">
+
+    </div>
+    <div class="mb-3">
+        <label for="Country_name" class="form-label">country name : </label>
+        <input type="text" class="form-control" id="Country_name" value="@Model.country_name" name="Country_name">
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

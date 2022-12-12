@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "InsertState";
+}
+
+<h2>InsertState</h2>
+<form method="post" action="/Country/InsertState">
+    <div class="mb-3">
+
+        <label for="country_id" class="form-label">Country id : </label>
+        <input type="text" class="form-control" id="country_id"  name="country_id">
+
+    </div>
+    <div class="mb-3">
+        <label for="state_id" class="form-label">State id : </label>
+        <input type="text" class="form-control" id="state_id"  name="state_id">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">State Name : </label>
+        <input type="text" class="form-control" id="state_name"  name="State_name">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
